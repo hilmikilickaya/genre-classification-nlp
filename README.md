@@ -22,6 +22,17 @@
 Random forests or random decision forests are an ensemble learning method for classification, regression, and other tasks that operate by constructing a   multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean/average prediction (regression) of the individual trees.
 
 After trying a few models for classification like Scoasthic Gradient Descent, logistic regression, I decided to go with Random Forest Classifier. I got almost 60 percent accuracy, but I realized that my model does not make predictions well for pop and rock songs. I  investigated a few misclassifications I found out there are a lot of common words between rock on pop songs. There is conflicting about how people label song genres.
+
+|               | Precision     |Recall           | f1-score  | support |
+| ------------- |:-------------:|:-------------:|:-------------:| -----:|
+| Country     | 0.64 | 0.76 | 0.70 | 223 |
+| Pop      | 0.38  |   0.54 | 0.45 | 206 |
+| R&B | 0.60  |  0.45 | 0.51 | 222 |
+| Rap | 0.74  |  0.77 | 0.76 | 329 |
+| Rock | 0.47 |  0.16 |  0.24 | 130 |
+|  |      |    |
+| Accuracy |      |    | 0.59 | 1110 |
+
   
   <p align="center">
   <img width="600" height="420" src="https://github.com/hilmikilickaya/genre-classification-nlp/blob/main/images/base_heatmap.png">
